@@ -4,7 +4,11 @@
 	<meta charset="UTF-8	">
 	<title>诗</title>
 	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
-	<script></script>
+	<script>
+		$(document).ready(function(){
+			$("#audio").play();
+		});
+	</script>
 	<style type="text/css">
 		body{
 			background-image: url("./images/sonwbackground.jpg");
@@ -43,7 +47,7 @@
 	</style>
 </head>
 <body>
-	<audio src="bgm/snow.m4a" controls="controls" autoplay="autoplay"></audio>
+	<audio id="audio" src="bgm/snow.m4a" controls="controls" autoplay="autoplay"></audio>
 	<h2>雪落下的声音</h2>
 	<p id="first">轻轻</p>
 	<p id="second">落在我掌心</p>
