@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("p").dblclick(function(){
+			$(this).hide(500,function(){
+				alert("测试");
+			});
+		});
+		$("button").click(function(){
+			$("p").show(1000,(function(){
+				alert("全部恢复");
+			})() );
+		})
+	});
+	function fnCallB(){
+		alert("全部恢复")
+	}
+</script>
+</head>
+
+<body>
+	<h2>这是一个标题</h2>
+	<p>这是一个段落。</p>
+	<p>这是另一个段落。</p>
+	<button>点我</button>
+</body>
+</html>
