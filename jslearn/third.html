@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8	">
+	<title>新年快乐</title>
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+
+	<style type="text/css">
+		body{
+			background-image: url("./images/newYear2.gif");
+			background-size: 100% 100%;
+			height: 100%;
+		}
+		html{
+			height: 100%;
+		}
+		@keyframes myfirst {
+			0% {opacity: 0;}
+			8% {opacity: 0;}
+			8.8% {opacity: 100;}
+			9.5% {opacity: 0;}
+			100% {opacity: 0;}
+		}
+		@keyframes mysecond {
+			0% {opacity: 0;}
+			9.5% {opacity: 0;}
+			10% {opacity: 100;}
+			11.5% {opacity: 0;}
+			75% {opacity: 0;}
+		}
+		p{
+			font-size: 60px;
+			position: absolute;
+			width: 100%;
+			text-align: center;
+		}
+		#first{
+			animation: myfirst  311s infinite;
+		}
+		#second{
+			animation: mysecond  311s infinite;
+		}
+	</style>
+</head>
+<body>
+	<audio id="audio" src="bgm/newYear.mp3" controls="controls" autoplay="autoplay" ></audio>
+	<p id="first">祝大家</p>
+	<p id="second">在新的一年里</p>
+</body>
+<script>
+	$(document).ready(function(){
+		var music = document.getElementById("audio");
+		if(music.paused){
+			music.paused = false;
+			music.play();
+		}
+	});
+</script>
+</html>
