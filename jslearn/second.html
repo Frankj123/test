@@ -4,15 +4,7 @@
 	<meta charset="UTF-8	">
 	<title>诗</title>
 	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
-	<script>
-		$(document).ready(function(){
-			var music = document.getElementById("audio");
-			if(music.paused){
-				music.paused = false;
-				music.play();
-			}
-		});
-	</script>
+
 	<style type="text/css">
 		body{
 			background-image: url("./images/sonwbackground.jpg");
@@ -56,4 +48,13 @@
 	<p id="first">轻轻</p>
 	<p id="second">落在我掌心</p>
 </body>
+<script>
+	$(document).ready(function(){
+		var music = document.getElementById("audio");
+		if(music.paused){
+			music.paused = false;
+			music.play();
+		}
+	});
+</script>
 </html>

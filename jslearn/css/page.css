@@ -18,7 +18,8 @@ page{
     animation: x 10s infinite;
 }
 #q{
-    background-color: blue;
+    background-image: url('../images/sonwbackground.jpg');
+    background-size: 100% 100%;
     animation: q 10s infinite;
 }
 #d{
